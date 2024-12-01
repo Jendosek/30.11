@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3.Entities
 {
-    internal class Shape
+    abstract class Shape
     {
+        public abstract double Area();
+        public virtual void Show()
+        {
+            Console.WriteLine($"Area: {Area()}");
+        }
     }
 }
